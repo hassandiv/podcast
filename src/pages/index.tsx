@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
-import { get } from "../utils/api/get";
+import { get } from "@/utils/api/get";
+import Layout from "@/components/layout";
+import { FC } from "react";
 
 interface Podcast {
   audio_length_sec: number;
@@ -32,7 +34,7 @@ interface Podcasts {
   total: number;
 }
 
-const Home = () => {
+const Home: FC = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [podcasts, setPodcasts] = useState<Podcasts[]>([]);
 
@@ -47,6 +49,10 @@ const Home = () => {
     }
   }, [searchQuery]);
 
-  return <main></main>;
+  return (
+    <Layout>
+      <h1>Home</h1>
+    </Layout>
+  );
 };
 export default Home;
