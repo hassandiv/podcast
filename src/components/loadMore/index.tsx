@@ -1,10 +1,16 @@
-const LoadMore = ({ handleLoadMore }: { handleLoadMore: () => void }) => {
+const LoadMore = ({
+  handleLoadMore,
+  isLoading,
+}: {
+  handleLoadMore: () => void;
+  isLoading: boolean;
+}) => {
   return (
     <button
-      className="p-2 bg-black text-white w-36 rounded-md"
+      className="p-2 bg-black text-white w-36 rounded-md mt-5"
       onClick={handleLoadMore}
     >
-      LoadMore
+      {isLoading ? "Loading..." : "LoadMore"}
     </button>
   );
 };

@@ -14,7 +14,7 @@ const Layout: FC<Props> = ({ children }) => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex min-h-screen flex-col items-center p-4">
+      <main className="flex min-h-screen w-full md:w-3/4 flex-col items-center p-4 mx-auto">
         {children}
       </main>
     </>

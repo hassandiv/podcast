@@ -1,11 +1,11 @@
-import { Podcast } from "@/pages/index";
+import { Podcast } from "@/hooks/usePodcast";
 
 interface PodcastCard {
   podcast: Podcast;
 }
 
 const PodcastCard = ({ podcast }: PodcastCard) => {
-  return <li>{podcast?.description_highlighted}</li>;
+  return <li>{podcast?.id}</li>;
 };
 
 export default PodcastCard;
