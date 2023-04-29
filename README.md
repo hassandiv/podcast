@@ -1,6 +1,7 @@
 # Search podcasts
 
 > Search podcasts web application, built with Next, TypeScript, TailWind CSS and Listen Notes API.
+> Here is the online testing link for the application https://search-podcasts.herokuapp.com/
 
 ## Table of Contents
 
@@ -16,7 +17,7 @@
 
 ## General Information
 
-The "Search podcasts" web application is a platform that allows users to search for their favorite podcasts from the Listen Notes API. The purpose of this project is to showcase the capabilities of the Listen Notes API, and it demonstrates how to perform a search by using a simple search form.
+This project is a frontend web application that allows users to search podcasts. The application is built using the Next JavaScript library and connects to a backend server Listen Notes API via RESTful APIs.
 
 ## Technologies Used
 
@@ -96,7 +97,7 @@ then:
 npm run dev
 ```
 
-- Access the web application at http://localhost:3000
+- Once the application is installed and running, you can access it at http://localhost:3000 in your web browser.
 
 ## Acknowledgements
 
