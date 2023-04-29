@@ -7,6 +7,7 @@
 - [General Information](#general-information)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
+- [Usage](#usage)
 - [Installation](#installation)
 - [How to test](#how-to-test)
 - [Acknowledgements](#acknowledgements)
@@ -23,6 +24,7 @@ The "Search podcasts" web application is a platform that allows users to search 
 - TypeScript - version 5.0.4
 - TailWind CSS - version 3.3.2
 - Axios - version ^1.3.6
+- Heroku server
 
 ## Features
 
@@ -34,6 +36,11 @@ The "Search podcasts" web application is a platform that allows users to search 
 - Display message "no more podcasts" if the user have reached the total results.
 - Display message "no podcasts found, please try a different search" if the keywords doesn't match any search results.
 - Display error message if an error occurs on the server.
+
+## Usage
+
+- The searching podcasts web application has been deployed to a Heroku server and is available for online access using the following link:
+- https://search-podcasts.herokuapp.com/
 
 ## Installation
 
