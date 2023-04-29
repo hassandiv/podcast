@@ -1,38 +1,99 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Search podcasts
 
-## Getting Started
+> Search podcasts web application, built with Next &amp; TypeScript, TailWind CSS and Listen Notes API.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [General Information](#general-information)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [How to test](#how-to-test)
+- [Acknowledgements](#acknowledgements)
+- [MIT License](#mit-License)
+- [Contact](#contact)
+
+## General Information
+
+The "Search podcasts" web application is a platform that allows users to search for their favorite podcasts from the Listen Notes API, all in one place. The purpose of this project is to showcase the capabilities of the Listen Notes API, and it demonstrates how to perform a search by using a simple search form.
+
+## Technologies Used
+
+- Next - version 13.3.1
+- TypeScript - version 5.0.4
+- TailWind CSS - version 3.3.2
+- Axios - version ^1.3.6
+
+## Features
+
+- Search for podcasts from the Listen Notes API.
+- Search form to perform podcasts search.
+- Display podcasts content in a responsive card design.
+- Load more button at the bottom of the page that will load more podcasts when clicked, giving the user the simple decision to see more podcasts or to reach the page end.
+- Clear search button to clear the search results.
+- Display message "no more podcasts" if the user have reached the total results.
+- Display message "no podcasts found, please try a different search" if the keywords doesn't match any search results.
+- Display error message if error occured from the server.
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository on your local machine:
+
+```env
+git clone git@github.com:hassandiv/podcast.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install the dependencies:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```ts
+first:
+cd podcast
+then:
+npm install
+OR:
+yarn add
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Set up your environment variables by creating a .env file in the project root directory with the following values:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```ev
+NEXT_PUBLIC_LISTEN_NOTES_PROD_API_URL="https://listen-api.listennotes.com/api/v2";
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```env
+NEXT_PUBLIC_LISTEN_NOTES_APIKEY="api key";
+```
 
-## Learn More
+## How to test
 
-To learn more about Next.js, take a look at the following resources:
+- Open your project folder in a code editor or terminal.
+- Run the following command in the terminal to start the application.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```ts
+first:
+cd podcast
+then:
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Access the web application at http://localhost:3000
 
-## Deploy on Vercel
+## Acknowledgements
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- I want to give a huge shoutout to the Listen Notes API developers for their exceptional podcast data source that powers the search functionality of this web application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## MIT License
+
+Copyright (c) [2023] [Elhassan Abdelhafez]
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software.
+
+## Contact
+
+- Created by https://github.com/hassandiv - feel free to contact me!
