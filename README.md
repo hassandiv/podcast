@@ -17,7 +17,7 @@
 
 ## General Information
 
-This project is a frontend web application that allows users to search podcasts. The application is built using the Next JavaScript library and connects to a backend server Listen Notes API via RESTful APIs.
+Search podcasts is a web application provides users with the ability to search for podcasts or podcasters information through a search form. Users can input a search keyword such as podcast title, description or publisher name in the form and then click on the search button to see the relevant podcasts. The search results page displays a maximum of five podcasts and features a load more button for additional results. To clear the search results, users can click on the "clear search" button. This app is developed with the Next JavaScript library, the application seamlessly connects to the Listen Notes API through RESTful APIs, ensuring reliable and efficient access to podcast data.
 
 ## Technologies Used
 
@@ -29,18 +29,17 @@ This project is a frontend web application that allows users to search podcasts.
 
 ## Features
 
-- Search for podcasts from the Listen Notes API.
-- Search form to perform podcasts search.
-- Display podcasts content in a responsive card design.
-- Load more button at the bottom of the page that will load more podcasts when clicked, giving the user the simple decision to see more podcasts or to reach the page end.
-- Clear search button to clear the search results.
-- Display message "no more podcasts" if the user have reached the total results.
-- Display message "no podcasts found, please try a different search" if the keywords doesn't match any search results.
-- Display error message if an error occurs on the server.
+- Provide a search form to allow users to search for podcasts.
+- Podcasters information are displayed in a responsive card design.
+- Load more button at the bottom of the page that will load more podcasts when clicked.
+- Include a "clear search" button to clear the search results.
+- Display a message stating "no more podcasts" if the total results have been reached.
+- Show a message stating "no podcasts found, please try a different search" if the search keywords do not match any results.
+- If an error occurs on the server, display an error message.
 
 ## Usage
 
-- The searching podcasts web application has been deployed to a Heroku server and is available for online access using the following link:
+- The web application has been deployed to Heroku server and is available for online access via the following link:
 - https://search-podcasts.herokuapp.com/
 
 ## Installation
@@ -55,22 +54,22 @@ git clone git@github.com:hassandiv/podcast.git
 
 2. Install the dependencies:
 
-first:
+first
 
-```ts
+```env
 cd podcast
 ```
 
-then:
+then
 
-```ts
+```env
 npm install
 ```
 
-OR:
+OR
 
-```ts
-yarn add
+```env
+yarn
 ```
 
 3. Set up your environment variables by creating a .env file in the project root directory with the following values:
@@ -85,15 +84,15 @@ NEXT_PUBLIC_LISTEN_NOTES_APIKEY="api key";
 - Open your project folder in a code editor or terminal.
 - Run the following command in the terminal to start the application.
 
-first:
+first
 
-```ts
+```env
 cd podcast
 ```
 
 then:
 
-```ts
+```env
 npm run dev
 ```
 
