@@ -1,9 +1,7 @@
 import axios from "axios";
 
-const baseUrl =
-  process.env.NEXT_PUBLIC_LISTEN_NOTES_PROD_API_URL ??
-  "https://listen-api.listennotes.com/api/v2";
-const APIKEY = process.env.NEXT_PUBLIC_LISTEN_NOTES_APIKEY ?? "add your apikey";
+const baseUrl = process.env.NEXT_PUBLIC_LISTEN_NOTES_PROD_API_URL;
+const APIKEY = process.env.NEXT_PUBLIC_LISTEN_NOTES_APIKEY;
 
 export const get = async (endpoint: string) => {
   try {

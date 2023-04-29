@@ -23,7 +23,7 @@ const PodcastCard = ({ podcast }: PodcastCard) => {
           {podcast?.publisher_original}
         </p>
         <div className="flex mt-4">
-          <Link legacyBehavior href={podcast?.image}>
+          <Link legacyBehavior href="#">
             <a
               target="_blank"
               className="flex items-center justify-center bg-slate-200 rounded-md w-24 mr-2 text-sm"
@@ -39,12 +39,19 @@ const PodcastCard = ({ podcast }: PodcastCard) => {
               <span className="text-lg mr-1">&#x1F517;</span> Web
             </a>
           </Link>
-          <Link legacyBehavior href={podcast?.image}>
+          <Link legacyBehavior href="#">
             <a
               target="_blank"
               className="flex items-center justify-center bg-slate-200 rounded-md w-24 mr-2 text-sm"
             >
               <span className="text-lg mr-1">&#x1F310; </span> RSS
+            </a>
+          </Link>
+        </div>
+        <div className="mt-3">
+          <Link legacyBehavior href={podcast?.listennotes_url}>
+            <a target="_blank" className="underline text-sm">
+              Listen notes link
             </a>
           </Link>
         </div>
