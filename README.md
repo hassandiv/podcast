@@ -1,6 +1,6 @@
 # Search podcasts
 
-> Search podcasts web application, built with Next &amp; TypeScript, TailWind CSS and Listen Notes API.
+> Search podcasts web application, built with Next, TypeScript, TailWind CSS and Listen Notes API.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@
 
 ## General Information
 
-The "Search podcasts" web application is a platform that allows users to search for their favorite podcasts from the Listen Notes API, all in one place. The purpose of this project is to showcase the capabilities of the Listen Notes API, and it demonstrates how to perform a search by using a simple search form.
+The "Search podcasts" web application is a platform that allows users to search for their favorite podcasts from the Listen Notes API. The purpose of this project is to showcase the capabilities of the Listen Notes API, and it demonstrates how to perform a search by using a simple search form.
 
 ## Technologies Used
 
@@ -33,13 +33,13 @@ The "Search podcasts" web application is a platform that allows users to search 
 - Clear search button to clear the search results.
 - Display message "no more podcasts" if the user have reached the total results.
 - Display message "no podcasts found, please try a different search" if the keywords doesn't match any search results.
-- Display error message if error occured from the server.
+- Display error message if an error occurs on the server.
 
 ## Installation
 
 To run this project locally, follow these steps:
 
-1. Clone the repository on your local machine:
+1. Clone the git repository on your local machine:
 
 ```env
 git clone git@github.com:hassandiv/podcast.git
@@ -47,12 +47,21 @@ git clone git@github.com:hassandiv/podcast.git
 
 2. Install the dependencies:
 
-```ts
 first:
+
+```ts
 cd podcast
+```
+
 then:
+
+```ts
 npm install
+```
+
 OR:
+
+```ts
 yarn add
 ```
 
@@ -60,9 +69,6 @@ yarn add
 
 ```ev
 NEXT_PUBLIC_LISTEN_NOTES_PROD_API_URL="https://listen-api.listennotes.com/api/v2";
-```
-
-```env
 NEXT_PUBLIC_LISTEN_NOTES_APIKEY="api key";
 ```
 
@@ -71,10 +77,15 @@ NEXT_PUBLIC_LISTEN_NOTES_APIKEY="api key";
 - Open your project folder in a code editor or terminal.
 - Run the following command in the terminal to start the application.
 
-```ts
 first:
+
+```ts
 cd podcast
+```
+
 then:
+
+```ts
 npm run dev
 ```
 
