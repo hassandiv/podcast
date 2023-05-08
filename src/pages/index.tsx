@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { usePodcast } from "@/hooks/usePodcast";
+import { usePodcast } from "@/hooks/usePodcasts";
 import Layout from "@/components/layout";
 import SearchForm from "@/components/searchForm";
 import PodcastList from "@/components/podcastList";

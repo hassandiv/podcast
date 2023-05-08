@@ -1,4 +1,4 @@
-import { Podcast } from "@/hooks/usePodcast";
+import { Podcast } from "@/hooks/usePodcasts";
 import PodcastCard from "../podcastCard/index";
 
 interface Podcasts {

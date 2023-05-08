@@ -1,4 +1,4 @@
-import { Podcast } from "@/hooks/usePodcast";
+import { Podcast } from "@/hooks/usePodcasts";
 import Image from "next/image";
 import Link from "next/link";
 

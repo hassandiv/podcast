@@ -58,7 +58,7 @@ export const usePodcast = () => {
 
   const handleSubmit = (e: React.SyntheticEvent<HTMLFormElement>): void => {
     e.preventDefault();
-    if (searchQuery) {
+    if (searchQuery && podcasts.length === 0) {
       searchPodcasts();
     }
   };
